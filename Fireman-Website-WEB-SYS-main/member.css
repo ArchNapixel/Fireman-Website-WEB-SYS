@@ -1,0 +1,108 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #b71c1c;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+nav {
+    background-color: #222;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Individual cards */
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #b71c1c;
+}
+
+/* Card headings */
+.card h2,
+.card h3 {
+    color: #b71c1c;
+    margin-top: 0;
+}
+
+/* Card paragraphs */
+.card p {
+    color: #333;
+}
+
+/* Card lists */
+.card ul {
+    padding-left: 25px;
+}
+
+/* Card links */
+.card a {
+    color: #b71c1c;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+
+h2, h3 {
+    color: #b71c1c;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+.logout {
+    display: inline-block;
+    background-color: #b71c1c;
+    color: white !important;
+    text-decoration: none !important;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout:hover {
+    background-color: #8e0000;
+    color: white !important;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
