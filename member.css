@@ -30,42 +30,48 @@ nav a:hover {
     color: red;
 }
 
-
-/* Main content */
 main {
-    max-width: 900px;
+    max-width: 1400px;
     margin: 30px auto;
-    padding: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px 5px;
+    align-items: center;
 }
 
-/* Individual cards */
 .card {
     background-color: white;
-    padding: 25px;
-    margin-bottom: 20px;
+    padding: 18px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     border-left: 5px solid #b71c1c;
 }
 
-/* Card headings */
+.card:first-child {
+    grid-column: 1 / -1;
+}
+
+.card:nth-of-type(6) {
+    grid-column: 1 / -1;
+}
+
 .card h2,
 .card h3 {
     color: #b71c1c;
     margin-top: 0;
 }
 
-/* Card paragraphs */
-.card p {
+.card.logout {
+    grid-column: 1 / -1;
+    margin: 0;
     color: #333;
 }
 
-/* Card lists */
 .card ul {
     padding-left: 25px;
 }
 
-/* Card links */
 .card a {
     color: #b71c1c;
     text-decoration: none;
@@ -88,11 +94,9 @@ section {
     display: inline-block;
     background-color: #b71c1c;
     color: white !important;
-    text-decoration: none !important;
+    text-decoration: none;
     padding: 12px 25px;
     border-radius: 6px;
-    font-weight: bold;
-    transition: 0.3s;
 }
 
 .logout:hover {
